@@ -1,3 +1,144 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= render "shared/banner" %>
+
+<section>
+  <div class="container">
+    <div class="row text-left mt-5">
+      <div class="col-12 col-sm-8 col-md-4 col-lg-4 m-sm-auto mr-md-auto ml-md-0">
+        <%= link_to "#" do %>
+          <%= image_tag("https://res.cloudinary.com/lynn-de-souza/image/upload/v1546516210/GoldenShoes/radek-skrzypczak-50471-unsplash.jpg", class: 'img-fluid img-shoe rounded') %>
+        <% end %>
+        <div class="text-block">
+          <h3 class="gender-label text-right"><%= link_to 'Men >', page_path('#') %></h3>
+          <p>Explore the latest men's fashion.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-8 col-md-4 col-lg-4 m-sm-auto pt-5 pt-md-0">
+        <%= link_to "#" do %>
+          <%= image_tag("https://res.cloudinary.com/lynn-de-souza/image/upload/v1546516355/GoldenShoes/dakota-krupp-559713-unsplash.jpg", class: 'img-fluid img-shoe rounded') %>
+        <% end %>
+        <div class="text-block">
+          <h3 class="gender-label text-right"><%= link_to 'Women >', page_path('#') %></h3>
+          <p>Explore the latest women's fashion.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-8 col-md-4 col-lg-4 m-sm-auto ml-md-auto mr-md-0 pt-5 pt-md-0">
+        <%= link_to "#" do %>
+          <%= image_tag("https://res.cloudinary.com/lynn-de-souza/image/upload/v1546513757/GoldenShoes/manki-kim-272565-unsplash_1.jpg", class: 'img-fluid img-shoe rounded') %>
+        <% end %>
+        <div class="text-block">
+          <h3 class="gender-label text-right"><%= link_to 'Kids >', page_path('#') %></h3>
+          <p>Explore our latest kids collection.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar10">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Casual</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Waterproof</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">High Heels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ankle Boots</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section class="fdb-block section-heels">
+  <div>
+    <%= link_to "#" do %>
+      <%= image_tag("https://res.cloudinary.com/lynn-de-souza/image/upload/v1546527650/GoldenShoes/jaclyn-moy-571597-unsplash.jpg", class: 'col-fill-right') %>
+    <% end %>
+  </div>
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md-5 text-center">
+        <h1>Froala Blocks</h1>
+        <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <p class="mt-4 mb-5"><%= link_to 'Shop now >', page_path('category/heels'), class: "shopnow-button" %></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="fdb-block section-trainer" style="background-color: #F8F8F8;">
+  <div>
+    <%= link_to "#" do %>
+      <%= image_tag("https://res.cloudinary.com/lynn-de-souza/image/upload/v1546528258/GoldenShoes/imani-clovis-234736-unsplash.jpg", class: 'col-fill-left') %>
+    <% end %>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-12 col-md-5 text-center trainer-description">
+        <h1>Froala Blocks</h1>
+        <p class="lead">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+
+        <p class="mt-4"><%= link_to 'Shop now >', page_path('#'), class: "shopnow-button" %></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="fdb-block">
+    <div class="row pt-5 justify-content-center align-items-center">
+      <div class="col-6 col-md-2">
+        <img alt="image" class="img-fluid" src="https://res.cloudinary.com/lynn-de-souza/image/upload/v1546513762/GoldenShoes/nathan-dumlao-592025-unsplash.jpg">
+      </div>
+      <div class="col-6 col-md-2 offset-md-1">
+        <img alt="image" class="img-fluid" src="https://res.cloudinary.com/lynn-de-souza/image/upload/v1546513762/GoldenShoes/nathan-dumlao-592025-unsplash.jpg">
+      </div>
+      <div class="col-6 col-md-2 mt-4 mt-md-0 offset-md-1">
+        <img alt="image" class="img-fluid" src="https://res.cloudinary.com/lynn-de-souza/image/upload/v1546513762/GoldenShoes/nathan-dumlao-592025-unsplash.jpg">
+      </div>
+      <div class="col-6 col-md-2 mt-4 mt-md-0 offset-md-1">
+        <img alt="image" class="img-fluid" src="https://res.cloudinary.com/lynn-de-souza/image/upload/v1546513762/GoldenShoes/nathan-dumlao-592025-unsplash.jpg">
+      </div>
+    </div>
+
+</section>
+
+
+<section class="fdb-block py-0">
+  <div class="section-spring py-5 my-5">
+    <div class="row text-left py-5">
+      <div class="col-12 col-sm-10 m-auto ml-md-5 col-md-8 col-lg-6">
+        <div class="fdb-box">
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-8 text-center">
+              <h1>Froala Design Blocks</h1>
+              <p class="lead">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+
+              <p class="h3 mt-4"><a href="https://www.froala.com">Learn More <i class="fas fa-angle-right"></i></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
