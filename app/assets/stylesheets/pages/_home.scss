@@ -38,6 +38,27 @@
 }
 
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .section-heels {
+    height: 55vh;
+  }
+  .section-trainer {
+    height: 40vh;
+  }
+  .trainer-description {
+    top: 1rem;
+  }
+  #img-mobile-trainer {
+    left: 0rem;
+  }
+}
+
+@media only screen  and (min-width : 1224px) {
+  .trainer-description {
+    top: 10rem;
+  }
+}
+
 .text-block {
   position: absolute;
   bottom: -50px;
