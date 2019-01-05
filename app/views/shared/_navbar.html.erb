@@ -1,22 +1,12 @@
- <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-    <div class="d-flex w-50 order-0">
 
-    </div>
-
-    <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last">always show</span>
-</nav>
-
-
- <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar-main">
-    <div class="d-flex w-50 order-0">
-        <%= link_to 'GOLDEN SHOES', root_path, class: "navbar-brand mr-1" %>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+<nav class="navbar navbar-dark navbar-expand-md justify-content-between" id="navbar-main">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
             <span class="navbar-toggler-icon"></span>
         </button>
-    </div>
-    <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
-        <ul class="navbar-nav">
-            <li class="nav-item dropdown mr-4">
+        <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown mr-4">
               <a class="nav-link nav-dropdown-links dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Men
               </a>
@@ -46,10 +36,20 @@
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
-
-        </ul>
+            </ul>
+        </div>
+        <%= link_to 'Golden Shoes', root_path, class: "navbar-brand golden-logo mx-auto d-block text-center order-0 order-md-1 w-25" %>
+        <div class="navbar-collapse collapse dual-nav w-50 order-2">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><%= link_to 'SALE', class: "sale-link", id: "sale-link" %></li>
+            </ul>
+        </div>
     </div>
-    <a href="#" class="navbar-text text-truncate mt-1 mr-3 w-50 text-right order-1 order-md-last">SALE</a>
+</nav>
+
+
+<nav class="navbar navbar-expand-md navbar-dark justify-content-center" id="navbar-top">
+    <span class="justify-content-center"><i class="fas fa-truck"></i> &nbsp; Same day delivery - ORDER BY 11AM TODAY.</span>
 </nav>
 
 

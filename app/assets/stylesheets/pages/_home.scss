@@ -9,12 +9,34 @@
       height: 300px;
   }
   .section-heels {
-  height: 100vh;
+  height: 110vh;
   }
   .section-trainer {
-    height: 70vh;
+    height: 80vh;
   }
 }
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .section-heels {
+    height: 72vh;
+  }
+  #img-mobile-heels {
+    left: 7rem;
+    margin-top: 2rem;
+  }
+  .section-trainer {
+    height: 60vh;
+  }
+  .trainer-description {
+    top: 7rem;
+  }
+  #img-mobile-trainer {
+    left: 5rem;
+  }
+}
+
 
 .text-block {
   position: absolute;
@@ -38,4 +60,13 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+
+.social-media-icon {
+  color: #f5c16c;
+  & :hover {
+    color: #FBEED0;
+    text-decoration: none !important;
+  }
 }
